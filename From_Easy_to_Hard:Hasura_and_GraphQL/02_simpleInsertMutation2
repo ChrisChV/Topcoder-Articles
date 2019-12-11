@@ -1,0 +1,10 @@
+mutation simpleInsertMutation {
+    insert_product(objects:{
+        name: "bread"
+        bar_code: "112233445",
+    }) {
+        returning{
+            id
+        }
+    }
+}

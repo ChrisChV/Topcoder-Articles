@@ -1,0 +1,18 @@
+query readWithRelationship($id_store:Int, $bar_code:String!) {
+    store(where: {id: {_eq: $id_store}}) {
+        name
+        prices(where: {product: {bar_code: {_eq: $bar_code}}}) {
+            product {
+                name
+                bar_code
+            }
+            price
+        }
+    }
+}
+
+### Query Variables
+{
+  "id_store": 2,
+  "bar_code": "123456789"
+}

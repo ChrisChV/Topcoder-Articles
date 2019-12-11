@@ -1,0 +1,8 @@
+mutation simpleInsertMutation {
+    insert_product(objects: {
+        name: "chocolate bar"
+        bar_code: "123456789",
+    }) {
+        affected_rows
+    }
+}

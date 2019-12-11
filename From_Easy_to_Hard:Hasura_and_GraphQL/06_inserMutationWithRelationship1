@@ -1,0 +1,21 @@
+mutation InserMutationWithRelationship($name:String!){
+    insert_store(objects: {
+        name: $name,
+        prices: {
+            data: [{
+                id_product: 1,
+                price: 2,
+            },{
+                id_product: 2,
+                price: 1,
+            }]
+        }
+    }) {
+        affected_rows
+    }
+}
+
+### Query Variables
+{
+    "name": "Luchito's Store"
+}

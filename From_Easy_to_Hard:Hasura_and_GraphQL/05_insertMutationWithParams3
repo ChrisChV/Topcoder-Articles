@@ -1,0 +1,16 @@
+mutation InsertMutationWithParams($products: [product_insert_input!]!) {  
+    insert_product(objects: $products) {
+        affected_rows
+    }
+}
+
+### Query Variables
+{
+    "products": [{
+        "name": "water",
+        "bar_code": "123321453"
+    },{
+        "name": "coca-cola",
+        "bar_code": "552839274"
+    }]
+}
