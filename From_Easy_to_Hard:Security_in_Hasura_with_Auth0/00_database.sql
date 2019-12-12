@@ -31,17 +31,17 @@ CREATE TABLE public.employee(
     name text,
     email text,
     id_store integer NOT NULL REFERENCES public.store(id)
-)
+);
 
 CREATE TABLE public.role(
     id SERIAL PRIMARY KEY,
     text_id text NOT NULL
-)
+);
 
 CREATE TABLE public.role_employee(
     id_employee integer NOT NULL REFERENCES public.employee(id),
     id_role integer NOT NULL REFERENCES public.role(id)
-)
+);
 
 INSERT INTO public.role values
     (1,'trial'),
