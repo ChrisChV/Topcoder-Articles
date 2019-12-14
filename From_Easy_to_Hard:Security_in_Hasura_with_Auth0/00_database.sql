@@ -58,8 +58,8 @@ INSERT INTO public.product values
     (6,'coca-cola','552839274');
 
 INSERT INTO public.store values
-    (1,"Luchito's Store"),
-    (2,"Chris' Store");
+    (1,'Luchito Store'),
+    (2,'Chris Store');
 
 INSERT INTO public.price values
     (1,1,1,2),
