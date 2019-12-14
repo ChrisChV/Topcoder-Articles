@@ -48,3 +48,21 @@ INSERT INTO public.role values
     (2,'owner'),
     (3,'cashier'),
     (4,'salesperson');
+
+INSERT INTO public.product values
+    (1,'chocolate bar','123456789'),
+    (2,'bread','223344556'),
+    (3,'milk','444444444'),
+    (4,'orange juice','777734921'),
+    (5,'water','123321453'),
+    (6,'coca-cola','552839274');
+
+INSERT INTO public.store values
+    (1,"Luchito's Store"),
+    (2,"Chris' Store");
+
+INSERT INTO public.price values
+    (1,1,1,2),
+    (2,2,1,1),
+    (3,1,2,1.5),
+    (4,2,2,1);
