@@ -28,6 +28,7 @@ CREATE TABLE public.receipt_price(
 
 CREATE TABLE public.employee(
     id SERIAL PRIMARY KEY,
+    auth0_id text,
     name text,
     email text,
     id_store integer NOT NULL REFERENCES public.store(id)
