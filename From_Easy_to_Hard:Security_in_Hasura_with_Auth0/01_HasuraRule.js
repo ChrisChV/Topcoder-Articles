@@ -5,7 +5,7 @@ function (user, context, callback) {
     context.idToken[namespace] = 
     { 
         'x-hasura-default-role': 'trial',
-        'x-hasura-allowed-roles': ['trial'],
+        'x-hasura-allowed-roles': ['trial', 'user'],
         'x-hasura-user-id': userId,
     };
 

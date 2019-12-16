@@ -1,0 +1,6 @@
+query productQuery{
+    product {
+        name
+        bar_code
+    }
+}
