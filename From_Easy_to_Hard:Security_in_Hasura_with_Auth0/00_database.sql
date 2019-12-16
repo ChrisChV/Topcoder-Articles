@@ -31,7 +31,7 @@ CREATE TABLE public.employee(
     auth0_id text,
     name text,
     email text,
-    id_store integer NOT NULL REFERENCES public.store(id)
+    id_store integer REFERENCES public.store(id)
 );
 
 CREATE TABLE public.role(
