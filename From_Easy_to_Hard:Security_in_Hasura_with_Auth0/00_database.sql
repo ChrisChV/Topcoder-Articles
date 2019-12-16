@@ -46,9 +46,10 @@ CREATE TABLE public.role_employee(
 
 INSERT INTO public.role values
     (1,'trial'),
-    (2,'owner'),
-    (3,'cashier'),
-    (4,'salesperson');
+    (2,'user'),
+    (3,'owner'),
+    (4,'cashier'),
+    (5,'salesperson');
 
 INSERT INTO public.product values
     (1,'chocolate bar','123456789'),
