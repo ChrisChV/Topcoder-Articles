@@ -2,7 +2,7 @@ function (user, context, callback) {
     const namespace = "https://hasura.io/jwt/claims";
     const userId = user.user_id;
     
-    const mutation = `query ($userId: String) {
+    const mutation = `query ($userId: String!) {
         employee(where: {auth0_id: {_eq: $userId}}){
           role_employees {
             role {
